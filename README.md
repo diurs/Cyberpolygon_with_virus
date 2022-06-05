@@ -18,3 +18,5 @@ cyberpolygon for information security training
 “Здравствуйте еще раз! я заинтересован в вашей работе. Вот мое резюме” 
 Его впечатлил телефонный разговор и он бежит побыстрее посмотреть его резюме.
 
+![Image alt](https://github.com/diurs/cyberpolygon/raw/main/image/image.png
+
