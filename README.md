@@ -1,6 +1,7 @@
 # cyberpolygon
 cyberpolygon for information security training
 
+Добавить видео работы или в гиф превратить
 
 ### Для работы стенда необходимо ввести след команды
 
