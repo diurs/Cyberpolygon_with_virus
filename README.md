@@ -1,7 +1,4 @@
-# cyberpolygon
-cyberpolygon for information security training
-
-Добавить видео работы или в гиф превратить
+# cyberpolygon with virus for information security training
 
 ### Для работы стенда необходимо ввести след команды
 ![Image alt](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-27-14.png)
