@@ -4,6 +4,7 @@ cyberpolygon for information security training
 Добавить видео работы или в гиф превратить
 
 ### Для работы стенда необходимо ввести след команды
+https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-27-14.png 
 
 ### Сценарий
 
