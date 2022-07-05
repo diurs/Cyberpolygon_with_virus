@@ -31,9 +31,12 @@ cyberpolygon for information security training
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-41-19.png)
 
 Так выглядят Отработавшие скрипты HR:
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-41-34.png)
 
+
 и hacker:
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-41-47.png)
 
 ## Описание созданного вируса
